@@ -28,6 +28,14 @@ public class Producto {
         this.precioBruto = precioBruto;
     }
 
+    public double getPrecioNeto(){
+        return ProductoIVA();
+    }
+
+    public double ProductoIVA(){
+        return precioBruto * (1 + (double) 21 / 100);
+    }
+
     @Override
     public String toString() {
         return descripcion + ": " + precioBruto + " €";

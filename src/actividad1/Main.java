@@ -6,5 +6,8 @@ public class Main {
         Producto p2 = new Producto("Ratón",5.99);
         System.out.println(p1);
         System.out.println(p2);
+
+        System.out.println(p1.ProductoIVA());
+        System.out.println(p1.getPrecioNeto());
     }
 }

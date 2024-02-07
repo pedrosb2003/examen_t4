@@ -1,8 +1,8 @@
 package actividad1;
 
 public class Producto {
-    private String descripcion;
-    private double precioBruto;
+    public String descripcion;
+    public double precioBruto;
 
     public Producto() {
     }
@@ -29,11 +29,7 @@ public class Producto {
     }
 
     public double getPrecioNeto(){
-        return ProductoIVA();
-    }
-
-    public double ProductoIVA(){
-        return precioBruto * (1 + (double) 21 / 100);
+        return precioBruto;
     }
 
     @Override
